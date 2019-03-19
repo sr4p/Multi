@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>template for simple games</title>
+    <script type="text/javascript" src="simpleGame.js"></script>
+    <script type="text/javascript">
+        var scene;
+        var ball;
+
+        function init() {
+            scene = new Scene();
+            ball = new Sprite(scene, "redBall.png", 30, 30);
+
+
+            scene.start();
+        } // end init
+
+        function update() {
+            scene.clear();
+
+            //handle events here
+
+            //update all the sprites
+            ball.update();
+        }
+    </script>
+</head>
+
+<body onload="init()">
+
+</body>
+
+</html>
